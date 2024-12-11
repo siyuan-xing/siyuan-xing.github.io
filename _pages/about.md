@@ -2,24 +2,26 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Mechanical Engineering Department, Cal Poly.
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Bldg. 13, Rm. 233</p>
+    <p>1 Grand Avenue</p>
+    <p>San Luis Obispo, CA 93401</p>
 
-news: true # includes a list of news items
+news: false # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am an assitant professor in the [Mechanical Engineering Department](https://me.calpoly.edu) at [California Polytechnic State University](https://www.calpoly.edu).
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+My research mainly focuses on nonlinear dynamics with applications in mechanical vibrations, control systems, and robotics. I am particularly interested in developing computational tools to uncover governing equations, predict complex patterns, and analyze bifurcations in nonlinear systems. Currently, my work explores interpretable neural networks to accelerate scientific discovery and enhance our understanding of complex phenomena. 
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+
+Feel free to contact me at [sixing@calpoly.edu](mailto:sixing@calpoly.edu).
+

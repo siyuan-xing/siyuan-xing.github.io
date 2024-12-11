@@ -2,11 +2,22 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Materials for courses you taught. Replace this text with your description.
+description: Below are courses that I have taught.
 nav: true
 nav_order: 6
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
 
-Organize your courses by years, topics, or universities, however you like!
+### **Cal Poly**
+
+#### Course Taught 
+
+* Engineering Dynamics (ME 212)
+* Intermediate Dynamics (ME 326)
+* Mechanical Vibrations (ME 318)
+* Mechanical Control Systems (ME 422)
+* Implementation of Mechanical Controls (ME 418) 
+
+#### Course Developed
+
+* Implementation of Mechanical Controls (ME 418) 
