@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://siyuanak.github.io/sitemap.xml
+Sitemap: https://siyuan-xing.github.io/sitemap.xml
