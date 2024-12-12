@@ -20,8 +20,7 @@ social: true # includes social icons at the bottom of the page
 
 I am an assitant professor in the [Mechanical Engineering Department](https://me.calpoly.edu) at [California Polytechnic State University](https://www.calpoly.edu).
 
-My research mainly focuses on nonlinear dynamics with applications in mechanical vibrations, control systems, and robotics. I am particularly interested in developing computational tools to uncover governing equations, predict complex patterns, and analyze bifurcations in nonlinear systems. Currently, my work explores interpretable neural networks to accelerate scientific discovery and enhance our understanding of complex phenomena. 
+My research mainly focuses on nonlinear dynamics with applications in mechanical vibrations, control systems, and robotics. I am particularly interested in developing computational tools to uncover governing equations, predict complex patterns, and analyze bifurcations in nonlinear systems. Currently, my work explores interpretable neural networks to accelerate scientific discovery and enhance our understanding of complex phenomena. At Cal Poly, I also lead a student team working on the design and control of agile legged robots, fostering innovation in robotics and hands-on learning for the next generation of engineers.
 
-
-Feel free to contact me at [sixing@calpoly.edu](mailto:sixing@calpoly.edu).
+I am currently looking for students interested in controls, robotics, and scientific machine learning. If you are interested in learning more about my research, feel free to contact me at [sixing@calpoly.edu](mailto:sixing@calpoly.edu).
 
