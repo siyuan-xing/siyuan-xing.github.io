@@ -1,0 +1,16 @@
+<p class="sponsors-intro">
+  I gratefully acknowledge the organizations that support my research, teaching, and laboratory activities.
+</p>
+
+<div class="sponsors-grid">
+  {% for sponsor in site.data.sponsors %}
+    <a class="sponsor-card" href="{{ sponsor.url }}" target="_blank" rel="noopener noreferrer">
+      <div class="sponsor-card-heading">
+        <i class="{{ sponsor.icon }}" aria-hidden="true"></i>
+        <span class="sponsor-card-name">{{ sponsor.name }}</span>
+      </div>
+      <span class="sponsor-card-category">{{ sponsor.category }}</span>
+      <p>{{ sponsor.description }}</p>
+    </a>
+  {% endfor %}
+</div>

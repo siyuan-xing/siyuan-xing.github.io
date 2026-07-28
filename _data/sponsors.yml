@@ -1,0 +1,23 @@
+- name: California Polytechnic State University (Cal Poly)
+  url: https://www.calpoly.edu/
+  category: Institutional Support
+  description: Institutional support for research and teaching.
+  icon: fa-solid fa-building-columns
+
+- name: The Noyce School of Applied Computing
+  url: https://noyce.calpoly.edu/
+  category: Institutional Support
+  description: Support for interdisciplinary research and applied computing.
+  icon: fa-solid fa-laptop-code
+
+- name: Keysight Technologies
+  url: https://www.keysight.com/
+  category: Industry Support
+  description: Industry support for research and education.
+  icon: fa-solid fa-microchip
+
+- name: Comcast
+  url: https://corporate.comcast.com/
+  category: In-Kind Support
+  description: In-kind equipment support for the teaching laboratory.
+  icon: fa-solid fa-screwdriver-wrench

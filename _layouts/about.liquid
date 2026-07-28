@@ -64,6 +64,12 @@ layout: default
       {% include selected_papers.liquid %}
     {% endif %}
 
+    <!-- Sponsors and support -->
+    {% if page.sponsors and site.data.sponsors %}
+      <h2>Sponsors &amp; Support</h2>
+      {% include sponsors.liquid %}
+    {% endif %}
+
     <!-- Social -->
     {% if page.social %}
       <div class="social">
