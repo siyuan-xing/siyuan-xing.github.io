@@ -66,6 +66,9 @@
             {% assign author_is_self = true %}
           {% endif %}
         {%- endif -%}
+        {%- capture author_first_initials -%}
+          {%- include author_initials.liquid first=author.first -%}
+        {%- endcapture -%}
         {% assign coauthor_url = null %}
         {%- assign clean_last_name = author_last_name | downcase | remove_accents -%}
         {% if site.data.coauthors[clean_last_name] %}
@@ -83,17 +86,17 @@
         {% endif %}
         {%- if author_is_self -%}
           <em>
-            {{- author.first }}
+            {{- author_first_initials }}
             {{ author_last_html -}}
           </em>
         {%- else -%}
           {%- if coauthor_url -%}
             <a href="{{ coauthor_url }}">
-              {{- author.first }}
+              {{- author_first_initials }}
               {{ author_last_html -}}
             </a>
           {%- else -%}
-            {{- author.first }}
+            {{- author_first_initials }}
             {{ author_last_html -}}
           {% endif %}
         {%- endif -%}
@@ -107,7 +110,10 @@
         {%- endif -%}
         {% assign more_authors_show = '' %}
         {%- for author in entry.author_array offset: author_array_limit -%}
-          {% assign more_authors_show = more_authors_show | append: author.first | append: ' ' | append: author.last %}
+          {%- capture more_author_first_initials -%}
+            {%- include author_initials.liquid first=author.first -%}
+          {%- endcapture -%}
+          {% assign more_authors_show = more_authors_show | append: more_author_first_initials | append: ' ' | append: author.last %}
           {% unless forloop.last %}
             {% assign more_authors_show = more_authors_show | append: ', ' %}
           {% endunless %}

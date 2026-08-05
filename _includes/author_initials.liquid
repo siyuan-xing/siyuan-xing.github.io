@@ -1,0 +1,23 @@
+{%- assign given_names = include.first | split: ' ' -%}
+{%- for given_name in given_names -%}
+  {%- unless forloop.first -%}{{ ' ' }}{%- endunless -%}
+  {%- if given_name contains '-' -%}
+    {%- assign hyphenated_names = given_name | split: '-' -%}
+    {%- for hyphenated_name in hyphenated_names -%}
+      {%- unless forloop.first -%}-{% endunless -%}
+      {%- assign existing_initials = hyphenated_name | split: '.' -%}
+      {%- if existing_initials.size > 1 -%}
+        {{- hyphenated_name -}}
+      {%- else -%}
+        {{- hyphenated_name | slice: 0 -}}.
+      {%- endif -%}
+    {%- endfor -%}
+  {%- else -%}
+    {%- assign existing_initials = given_name | split: '.' -%}
+    {%- if existing_initials.size > 1 -%}
+      {{- given_name -}}
+    {%- else -%}
+      {{- given_name | slice: 0 -}}.
+    {%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
