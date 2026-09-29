@@ -1,0 +1,29 @@
+{%- assign issue_number = entry.number | default: entry.issue -%}
+{%- assign page_range = entry.pages | replace: '--', '–' -%}
+{%- if entry.type == 'article' -%}
+  <em>{{ entry.journal }}</em>
+  {%- if entry.volume %}, vol. {{ entry.volume }}{% endif -%}
+  {%- if issue_number %}, no. {{ issue_number }}{% endif -%}
+  {%- if entry.pages -%}
+    {%- if page_range contains '–' or page_range contains '-' %}, pp. {{ page_range }}
+    {%- else %}, Art. {{ page_range }}{% endif -%}
+  {%- endif -%}
+{%- elsif entry.type == 'inproceedings' -%}
+  In <em>{{ entry.booktitle }}</em>
+  {%- if entry.volume %}, vol. {{ entry.volume }}{% endif -%}
+  {%- if entry.pages %}, Paper {{ page_range }}{% endif -%}
+  {%- if entry.address %}, {{ entry.address }}{% endif -%}
+{%- elsif entry.type == 'inbook' or entry.type == 'incollection' -%}
+  In <em>{{ entry.booktitle }}</em>
+  {%- if entry.editor %}, edited by {{ entry.editor }}{% endif -%}
+  {%- if entry.series %}, {{ entry.series }}{% endif -%}
+  {%- if entry.volume %}, vol. {{ entry.volume }}{% endif -%}
+  {%- if entry.pages %}, pp. {{ page_range }}{% endif -%}
+  {%- if entry.publisher %}, {{ entry.publisher }}{% endif -%}
+{%- elsif entry.type == 'book' -%}
+  {{ entry.publisher }}
+{%- else -%}
+  {{ entrytype }}
+{%- endif -%}
+{%- if entry.year %} ({{ entry.year }}).{% endif -%}
+{%- if entry.additional_info %} {{ entry.additional_info }}{% endif -%}
