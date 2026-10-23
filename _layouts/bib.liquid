@@ -193,6 +193,12 @@
     <div class="periodical">
       {{ entry.note | strip }}
     </div>
+    {% if entry.featured %}
+      <div class="publication-feature">
+        <i class="fa-solid fa-bullhorn" aria-hidden="true"></i>
+        <span>{{ entry.featured | escape }}</span>
+      </div>
+    {% endif %}
 
     <!-- Links/Buttons -->
     <div class="links">

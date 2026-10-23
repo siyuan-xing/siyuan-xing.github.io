@@ -749,6 +749,31 @@ footer.sticky-bottom {
         }
       }
 
+      .publication-feature {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.55rem;
+        max-width: 100%;
+        margin: 0.5rem 0 0.65rem;
+        padding: 0.45rem 0.75rem;
+        border: 1px solid #e6cf91;
+        border-left: 3px solid #b8860b;
+        border-radius: 0.35rem;
+        background-color: #fff7e2;
+        color: #76520b;
+        font-size: 0.875rem;
+        font-weight: 600;
+        line-height: 1.45;
+
+        i {
+          flex-shrink: 0;
+        }
+
+        span {
+          color: inherit;
+        }
+      }
+
       .links {
         a.btn {
           color: var(--global-text-color);
@@ -1304,4 +1329,11 @@ ninja-keys::part(ninja-input-wrapper) {
 ::highlight(search) {
   background-color: var(--global-theme-color);
   color: var(--global-text-color);
+}
+
+html[data-theme="dark"] .publications ol.bibliography li .publication-feature {
+  background-color: #352c19;
+  border-color: #75602b;
+  border-left-color: #dfb653;
+  color: #f1cf80;
 }
