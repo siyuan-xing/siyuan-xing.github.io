@@ -25,6 +25,12 @@
     },
     {
       "name": "California Polytechnic State University, San Luis Obispo",
+      "position": "Affiliated Faculty, Noyce School of Applied Computing",
+      "startDate": "2025-11",
+      "endDate": "Present"
+    },
+    {
+      "name": "California Polytechnic State University, San Luis Obispo",
       "position": "Associate Professor, Mechanical Engineering Department",
       "url": "https://me.calpoly.edu/faculty/sixing/",
       "startDate": "2025-09",
@@ -50,13 +56,34 @@
     {
       "institution": "Southern Illinois University, Carbondale",
       "location": "Carbondale, IL",
-      "area": "Mechanical Engineering",
+      "area": "Engineering Science",
       "studyType": "PhD",
       "startDate": "2016.08",
       "endDate": "2019.08"
+    },
+    {
+      "institution": "Southern Illinois University Edwardsville",
+      "location": "Edwardsville, IL",
+      "area": "Mechanical Engineering",
+      "studyType": "MS",
+      "startDate": "2013",
+      "endDate": "2016"
+    },
+    {
+      "institution": "Sichuan University",
+      "location": "Sichuan, China",
+      "area": "Electrical Engineering",
+      "studyType": "BS",
+      "startDate": "2009",
+      "endDate": "2013"
     }
   ],
   "awards": [
+    {
+      "title": "Travel Award",
+      "date": "2025",
+      "awarder": "2nd SIAM Northern and Central California Sectional Conference (NCC25), Lawrence Berkeley National Laboratory (LBNL), October 27-28, 2025"
+    },
     {
       "title": "Best Face to Face Presentation Award",
       "date": "2023",
@@ -76,6 +103,16 @@
       "title": "Bentley Professor",
       "date": "2023",
       "awarder": "Department of Mechanical Engineering, California Polytechnic State University"
+    },
+    {
+      "title": "Outstanding Teaching Assistant Award",
+      "date": "2016",
+      "awarder": "Southern Illinois University Edwardsville"
+    },
+    {
+      "title": "Outstanding Graduate Award",
+      "date": "2016",
+      "awarder": "Southern Illinois University Edwardsville"
     }
   ],
   "interests": [
