@@ -3,6 +3,8 @@ layout: about
 title: About
 permalink: /
 subtitle: Mechanical Engineering Department, Cal Poly.
+research_headline: Interpretable and Scalable Scientific Machine Learning
+research_focus: for Nonlinear Dynamics
 
 profile:
   align: right
@@ -21,6 +23,6 @@ social: true # includes social icons at the bottom of the page
 
 I am an associate professor in the [Mechanical Engineering Department](https://me.calpoly.edu) at [California Polytechnic State University](https://www.calpoly.edu).
 
-My research mainly focuses on nonlinear dynamics with applications in mechanical vibrations, control systems, and robotics. I am particularly interested in developing computational tools to uncover governing equations, predict complex patterns, and analyze bifurcations in nonlinear systems. Currently, my work explores interpretable neural networks to accelerate scientific discovery and enhance our understanding of complex phenomena. At Cal Poly, I also lead a student team working on the design and control of agile legged robots, fostering innovation in robotics and hands-on learning for undergraduate and graduate students.
+My research revolves around nonlinear dynamics, focusing on periodic motions, bifurcations, and chaos, with applications in mechanical vibrations, control systems, and robotics. My recent interests center on developing interpretable and scalable representations for high-dimensional nonlinear dynamics. I explore structured neural representations for discovering governing equations and modeling complex dynamical behavior, with the goal of connecting mathematical interpretability with computational efficiency. At Cal Poly, I also lead a student team working on the design and control of agile legged robots.
 
 I am currently looking for students interested in controls, robotics, and scientific machine learning. If you are interested in learning more about my research, feel free to contact me at [sixing@calpoly.edu](mailto:sixing@calpoly.edu).

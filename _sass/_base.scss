@@ -756,11 +756,11 @@ footer.sticky-bottom {
         max-width: 100%;
         margin: 0.5rem 0 0.65rem;
         padding: 0.45rem 0.75rem;
-        border: 1px solid #e6cf91;
-        border-left: 3px solid #b8860b;
+        border: 1px solid #ccd8ef;
+        border-left: 3px solid var(--global-theme-color);
         border-radius: 0.35rem;
-        background-color: #fff7e2;
-        color: #76520b;
+        background-color: #f0f4fc;
+        color: #244879;
         font-size: 0.875rem;
         font-weight: 600;
         line-height: 1.45;
@@ -1326,14 +1326,47 @@ ninja-keys::part(ninja-input-wrapper) {
 }
 
 // highlight-search-term
+.post-header .research-statement {
+  margin: 1.15rem 0 1.5rem;
+  padding-left: 0.85rem;
+  border-left: 2px solid var(--global-theme-color);
+  line-height: 1.45;
+
+  strong {
+    display: block;
+    font-size: clamp(1.1rem, 2vw, 1.35rem);
+    font-weight: 500;
+    color: var(--global-theme-color);
+  }
+
+  span {
+    display: block;
+    margin-top: 0.15rem;
+    font-size: 1.05rem;
+    color: var(--global-text-color);
+  }
+}
+
+.homepage {
+  .post-header { margin-bottom: 1.5rem; }
+  article > .clearfix > p { line-height: 1.65; }
+  .profile .more-info {
+    font-family: inherit;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: var(--global-text-color-light);
+    p { margin-bottom: 0.15rem; }
+  }
+}
+
 ::highlight(search) {
   background-color: var(--global-theme-color);
   color: var(--global-text-color);
 }
 
 html[data-theme="dark"] .publications ol.bibliography li .publication-feature {
-  background-color: #352c19;
-  border-color: #75602b;
-  border-left-color: #dfb653;
-  color: #f1cf80;
+  background-color: #1c293d;
+  border-color: #3b5275;
+  border-left-color: #8cafe8;
+  color: #c2d6f5;
 }
