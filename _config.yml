@@ -355,6 +355,7 @@ filtered_bibtex_keywords:
     html,
     inspirehep_id,
     pdf,
+    pdf_label,
     poster,
     preview,
     selected,

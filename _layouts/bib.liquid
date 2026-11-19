@@ -227,11 +227,11 @@
         {% endif %}
       {% endif %}
       {% if entry.pdf %}
-        {% if entry.pdf contains '://' %}
-          <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
-        {% else %}
-          <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
-        {% endif %}
+        {% assign pdf_url = entry.pdf %}
+        {% unless pdf_url contains '://' %}
+          {% assign pdf_url = pdf_url | prepend: '/assets/pdf/' | relative_url %}
+        {% endunless %}
+        <a href="{{ pdf_url }}" class="btn btn-sm z-depth-0" role="button">{{ entry.pdf_label | default: 'PDF' | escape }}</a>
       {% endif %}
       {% if entry.supp %}
         {% if entry.supp contains '://' %}
